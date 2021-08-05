@@ -1,0 +1,21 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Players</h1>
+<%= form_with(url: search_players_path, data: { controller: 'form-submission', form_submission_target: "form" }) do |form| %>
+  <%= form.label :query, "Search by name:" %>
+  <%= form.text_field :query, data: { action: "input->form-submission#search" } %>
+<% end %>
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <%= render "list", players: @players %>
+</table>
+
+<br>
+
+<%= link_to 'New Player', new_player_path %>
