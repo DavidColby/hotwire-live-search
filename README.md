@@ -1,24 +1,15 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+The code in this repository was written to accompany the guide originally published [here](https://www.colby.so/posts/instant-search-with-rails-6-and-hotwire).
 
-Things you may want to cover:
+The guide and this code base demonstrate a simple search-as-you-type interface built with Ruby on Rails and [Hotwire](https://hotwired.dev/).
 
-* Ruby version
+To run this code locally, you'll need Ruby 2.7.2, Rails, and Yarn installed on your machine. 
 
-* System dependencies
+Once you've got those tools installed and cloned the code to your local machine:
 
-* Configuration
+1. rails db:create db:migrate
+1. rails s
+1. Visit [http://localhost:3000/players](http://localhost:3000/players) in your browser.
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Need help getting things working? Have questions? Feel free to get in touch, you can find my contact info at the bottom of the guide linked above.
